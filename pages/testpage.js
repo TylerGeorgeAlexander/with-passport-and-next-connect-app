@@ -6,7 +6,7 @@ import logo from '../assets/CoffeeChatr-logos/CoffeeChatr-logos.jpg'
 import connectMongo from "../utils/connectMongo";
 import Test from "../models/testModel";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   try {
     console.log("CONNECTING TO MONGO");
     await connectMongo();
