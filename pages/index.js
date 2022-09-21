@@ -31,7 +31,7 @@ export default function HomePage() {
   return (
     <>
       <h1>
-        <a href="/test">Test Page</a> +{' '}
+        <a href="/testpage">Test Page</a> +{' '}
         <a href="http://www.passportjs.org/">Passport.js</a> +{' '}
         <a href="https://github.com/hoangvvo/next-connect">next-connect</a>{' '}
         Example
