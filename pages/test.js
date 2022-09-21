@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Test.module.css";
+import logo from '../assets/CoffeeChatr-logos/CoffeeChatr-logos.jpg'
 
 import connectMongo from "../utils/connectMongo";
 import Test from "../models/testModel";
@@ -67,7 +68,7 @@ export default function TestPage({tests}) {
       </main>
 
       {/* Map out the tests */}
-      {tests && tests.map(el => el.name)}
+      {tests && tests.map(el => <li key={el._id}>{el.name}</li>)}
 
       <footer className={styles.footer}>
         <a
@@ -77,7 +78,7 @@ export default function TestPage({tests}) {
         >
           Powered by{" "}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src={logo} alt="Logo" width={72} height={72} />
           </span>
         </a>
       </footer>
